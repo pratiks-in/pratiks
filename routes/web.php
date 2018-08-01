@@ -11,17 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/','PostController@index');
+Route::get('/post/{slug}','PostController@getpost');
+
 Route::get('/about', function () {
     return view('about');
 });
 Route::get('/contact', function () {
     return view('contact');
-});
-Route::get('/post', function () {
-    return view('post');
 });
 
 Route::group(['prefix' => 'admin'], function () {
