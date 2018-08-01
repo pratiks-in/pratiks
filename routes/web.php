@@ -13,12 +13,11 @@
 
 Route::get('/','PostController@index');
 Route::get('/post/{slug}','PostController@getpost');
+Route::get('/contact','ContactMeController@create');
+Route::post('/contact','ContactMeController@store');
 
 Route::get('/about', function () {
     return view('about');
-});
-Route::get('/contact', function () {
-    return view('contact');
 });
 
 Route::group(['prefix' => 'admin'], function () {
