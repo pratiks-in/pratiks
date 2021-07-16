@@ -1,0 +1,43 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nav-bg {
+    background-color: #808080;
+}
+
+.white{
+    color: #fff;
+}
+
+.golden{
+    color: #e4b03c;
+}
+
+.primary-font {
+    color: #58585a;
+}
+
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.main-img {
+    border-radius: 4px;
+    max-height: 350px;
+    max-width: auto
+}
+
+.email {
+    text-decoration: underline;
+    color :#58585a
+}
+
+.icons{
+    color: #58585a;
+    text-decoration: none;
+    font-size: 20px;
+}
